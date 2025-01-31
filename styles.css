@@ -3,6 +3,7 @@
 @import url("styles/icon.css");
 @import url("styles/variables.css");
 @import url("styles/content.css");
+@import url("styles/login-demo.css");
 
 
 /* Стили для общей страницы */
@@ -15,7 +16,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -29,18 +40,8 @@ body {
     }
 }
 
-/* Титульная панель окна */
-.title-bar {
-    background-color: #444;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.global-font {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Кнопка закрытия окна */
@@ -78,4 +79,13 @@ button:hover {
     to {
         transform: translateY(-5px);
     }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
 }

@@ -1,10 +1,10 @@
 .desktop {
     background-color: var(--color-green);
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 75%;
     border: 15px solid var(--color-border-grey);
     border-radius: 25px;
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: start;
@@ -14,6 +14,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: none;
 }
 
 .desktop::before {
@@ -28,7 +29,7 @@
             rgba(255, 255, 255, 0.05) 0,
             rgba(255, 255, 255, 0.05) 2px,
             transparent 2px,
-            transparent 4px
+            transparent 6px
     );
     animation: moveLines 5s linear infinite;
     pointer-events: none;

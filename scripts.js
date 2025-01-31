@@ -42,3 +42,50 @@ document.querySelectorAll('.title-bar').forEach(titleBar => {
 
 document.addEventListener('mousemove', dragWindow); // Перемещение
 document.addEventListener('mouseup', stopDragging); // Конец перетаскивания
+
+async function demoLogin() {
+    const data = {
+        login: {
+            text: 'Vladyslav Skrypnyk',
+            formElementSelectorId: 'email-input'
+        },
+        password: {
+            text: '1234567890',
+            formElementSelectorId: 'password-input'
+        }
+    }; let timeout = 100;
+
+    await startTyping(data.login.text, data.login.formElementSelectorId, timeout);
+    await new Promise(resolve => setTimeout(resolve, 500)); // Задержка между вводами
+    await startTyping(data.password.text, data.password.formElementSelectorId, timeout);
+    let form = document.getElementById('login-demo'), desktop = document.getElementById('desktop');
+    if (form) {
+        form.style.display = 'none';
+    }
+    if (desktop) {
+        desktop.style.display = 'grid';
+    }
+}
+
+function startTyping(text, formElementSelectorId, delay) {
+    return new Promise(resolve => {
+        const input = document.getElementById(formElementSelectorId);
+        if (!input) return resolve(); // Если элемента нет, просто завершаем
+
+        input.value = ""; // Очищаем поле перед началом
+        let i = 0;
+
+        function typeNextChar() {
+            if (i < text.length) {
+                input.value += text[i];
+                i++;
+                setTimeout(typeNextChar, delay);
+            } else {
+                resolve(); // Завершаем промис после окончания ввода
+            }
+        }
+
+        typeNextChar();
+    });
+}
+
