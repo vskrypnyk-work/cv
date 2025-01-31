@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="all" href="styles.css">
-    <title>Vladyslav Skrypnyk - CV</title>
+    <title>My CV - Desktop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Job Title | Profession</p>
-    </header>
-    
-    <section class="section about">
-        <h2>About Me</h2>
-        <p>Brief description about yourself, your passion, and what you do.</p>
-    </section>
-    
-    <section class="section skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-        </ul>
-    </section>
-    
-    <section class="section experience">
-        <h2>Experience</h2>
-        <p><strong>Job Title</strong> - Company (Year - Present)</p>
-        <p>Short description of your role and achievements.</p>
-    </section>
-    
-    <section class="section contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
-    </section>
+<div class="desktop">
+    <div class="icon" onclick="openWindow('about')"><img src="images/file.png" alt="Folder"><p>About Me</p></div>
+    <div class="icon" onclick="openWindow('experience')"><img src="images/file.png" alt="Folder"><p>Experience</p></div>
+    <div class="icon" onclick="openWindow('projects')"><img src="images/file.png" alt="Folder"><p>Projects</p></div>
+    <div class="icon" onclick="openWindow('skills')"><img src="images/file.png" alt="Folder"><p>Skills</p></div>
+    <div class="icon" onclick="openWindow('contact')"><img src="images/file.png" alt="Folder"><p>Contact</p></div>
+</div>
+
+<div id="about" class="window">
+    <div class="title-bar">
+        <span>Magento 2 Backend Developer</span>
+        <button onclick="closeWindow('about')">✖</button>
+    </div>
+    <div class="content">
+        <p>
+            Experienced Magento 2 developer who focuses on designing and upgrading eCommerce solutions.
+            Capable of changing modules, integrating third-party services, and increasing performance on both
+            CE and EE versions. Proficient in PHP 8.2, database optimization, and building scalable solutions for
+            multi-site platforms. Strong knowledge of Magento architecture, MSI, and frontend/backend
+            development, with an emphasis on delivering user-friendly and high-performance solutions.
+        </p>
+    </div>
+</div>
+
+<div id="experience" class="window">
+    <div class="title-bar" >
+        <span>Experience</span>
+        <button onclick="closeWindow('experience')">✖</button>
+    </div>
+    <div class="content">
+        <p>My experience includes...</p>
+    </div>
+</div>
+
+
+<div id="contact" class="window">
+    <div class="title-bar">
+        <span>Contact Details</span>
+        <button onclick="closeWindow('contact')">✖</button>
+    </div>
+    <div class="content">
+        <p><strong>Location</strong>: Zaporizhzhya, Ukraine</p>
+        <p><strong>Email</strong>: <a class="icon-link" href="mailto:vskrypnyk.work@gmail.com">vskrypnyk.work@gmail.com</a></p>
+        <p><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/v-skrypnyk" target="_blank">Vladyslav Skrypnyk</a></p>
+    </div>
+</div>
+
+
+<div id="content"></div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
-

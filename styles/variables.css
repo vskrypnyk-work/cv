@@ -1,0 +1,13 @@
+/** Init global variables */
+
+:root {
+    --color-carbon: #333;
+    --color-black: #222;
+    --color-blue: #0073e6;
+    --color-green: #006400;
+    --color-border-grey: #555;
+    --color-background-back: #1a1a1a;
+    --color-grey-light: #777;
+    --color-icon-background-grey: #3b3b3b;
+    --color-icon-white: #c0c0c0;
+}
