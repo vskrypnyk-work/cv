@@ -1,0 +1,186 @@
+.macintosh {
+    display: block;
+    width: 680px; /* Увеличено в 2 раза */
+    height: 950px; /* Увеличено в 2 раза */
+    margin: 125px auto;
+    position: relative;
+    box-shadow: 0 160px 120px -120px rgba(0,0,0,0.4);
+}
+
+.monitor {
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 820px; /* Увеличено в 2 раза */
+    border-radius: 15px;
+    background-color: #DDDBC2;
+    position: absolute;
+    background-image: linear-gradient(
+            #DDDBC2, #DFDAC4
+    );
+    background-image: conic-gradient(
+            #DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%
+    );
+    box-shadow: 0 120px 40px -40px rgba(142,137,97,0.5);
+}
+
+.monitor-inner {
+    display: block;
+    width: 640px; /* Увеличено в 2 раза */
+    height: 720px; /* Увеличено в 2 раза */
+    background-image: linear-gradient(#CAC6A9, #CFCEB0);
+    margin: auto;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+}
+
+.screen-cutout {
+    display: block;
+    width: 560px; /* Увеличено в 2 раза */
+    height: 450px; /* Увеличено в 2 раза */
+    background-color: #DDDBC2;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+            #938F6A, #E0DFC3
+    );
+    background-image: conic-gradient(
+            #938F6A 12.5%, #B5B293 15.5% 33%, #E0DFC3 34% 65.5%, #C2C1A2 66.5% 83.5%, #938F6A 86.5%
+    );
+}
+
+.screen {
+    display: block;
+    width: 520px; /* Увеличено в 2 раза */
+    height: 390px; /* Увеличено в 2 раза */
+    background-color: #4F5555;
+    background-image: radial-gradient(#525B5A, #50585A);
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 20px #2B3030 inset;
+}
+
+.logo {
+    display: block;
+    width: 44px; /* Увеличено в 2 раза */
+    height: 44px; /* Увеличено в 2 раза */
+    background-image: radial-gradient(#C9C6B5, #CBC9BA);
+    border-radius: 2px;
+    position: absolute;
+    left: 44px; /* Увеличено в 2 раза */
+    bottom: 44px; /* Увеличено в 2 раза */
+    box-shadow: 0 0 4px 0px #979181 inset;
+}
+
+.logo p {
+    text-align: center;
+    margin-block-start: 3px;
+    font-size: 35px;
+    margin-block-end: 0px;
+}
+
+.opening {
+    display: block;
+    width: 310px; /* Увеличено в 2 раза */
+    height: 30px; /* Увеличено в 2 раза */
+    background-image: linear-gradient(
+            #BEBB9C, #CAC8A7 74.5% 75.5%);
+    background-image: conic-gradient(
+            #BEBB9C 0% 23.5%, #C7C2A2 24.5% 25%, #DCD8BD 26% 73.5%, #CAC8A7 74.5% 75.5%, #BEBB9C 76.5%);
+    position: absolute;
+    bottom: 110px; /* Увеличено в 2 раза */
+    right: 42px; /* Увеличено в 2 раза */
+    border-radius: 4px;
+}
+
+.opening-inner {
+    display: block;
+    width: 252px; /* Увеличено в 2 раза */
+    height: 16px; /* Увеличено в 2 раза */
+    background-color: #181914;
+    border-radius: 2px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 7px; /* Увеличено в 2 раза */
+}
+
+.foot {
+    display: block;
+    width: 100%;
+    height: 170px; /* Увеличено в 2 раза */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 7px;
+    background-image: linear-gradient(#BBB497, #C1BE9F);
+    box-shadow: 28px 0 6px -14px #CCCAB1 inset,
+    -28px 0 6px -14px #CECDB1 inset,
+    0 64px 6px -14px #C1BE9F inset,
+    0 -12px 6px -8px #AEAA87 inset;
+}
+
+.inset {
+    display: inline;
+    width: 32px; /* Увеличено в 2 раза */
+    height: 32px; /* Увеличено в 2 раза */
+    background-color: #C3BEA0;
+    position: absolute;
+    bottom: 40px; /* Увеличено в 2 раза */
+    left: 70px; /* Увеличено в 2 раза */
+    border-radius: 2px;
+    box-shadow: 0 0 4px #C9C3A3 inset,
+    0 0px 4px 2px #BCB694;
+}
+
+.cable-container {
+    display: block;
+    width: 120px; /* Увеличено в 2 раза */
+    height: 60px; /* Увеличено в 2 раза */
+    background-color: #C3BEA0;
+    position: absolute;
+    right: 60px; /* Увеличено в 2 раза */
+    bottom: 30px; /* Увеличено в 2 раза */
+    border-radius: 3px;
+    box-shadow: 0 4px 2px -2px #D0CBAE inset,
+    8px 0 2px -2px #BAB492 inset,
+    -10px 0 4px -4px #A8A281 inset,
+    0 -8px 4px -6px #ADA88B inset;
+}
+
+.cable-hole {
+    display: block;
+    width: 36px; /* Увеличено в 2 раза */
+    height: 40px; /* Увеличено в 2 раза */
+    background-color: #848580;
+    position: absolute;
+    top: 10px;
+    right: 14px; /* Увеличено в 2 раза */
+    border-radius: 3px;
+    box-shadow: 0 -8px 1px -1px rgba(25,25,25,0.2) inset,
+    -4px 0 1px -1px rgba(25,25,25,0.2) inset,
+    4px 0 1px -1px rgba(25,25,25,0.2) inset;
+    background-image: linear-gradient(
+            #848580 20%,
+            transparent 20% 80%,
+            #848580 80%
+    ), linear-gradient(
+            90deg,
+            transparent 30%,
+            #181914 30% 70%,
+            transparent 70%
+    );
+}

@@ -29,7 +29,6 @@ input:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: var(--bs-body-bg);
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
@@ -41,12 +40,12 @@ input:focus {
     align-self: center;
     display: flex;
     flex-direction: column;
-    width: 25%;
     z-index: 50;
 
     .form-group > input {
         margin-top: 2%;
         width: calc(100% - 26px);
+        color: white;
     }
 
     .form-group {
@@ -56,7 +55,7 @@ input:focus {
 
     .btn {
         background-color: #333;
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 10px;
         text-align: center;
         text-transform: uppercase;

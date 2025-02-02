@@ -5,30 +5,14 @@ async function demoLogin() {
     await startTyping(data.login.text, data.login.formElementSelectorId, timeout);
     await new Promise(resolve => setTimeout(resolve, 500));
     await startTyping(data.password.text, data.password.formElementSelectorId, timeout);
-    await showLoader();
-}
-
-function showLoader() {
-    let button = document.getElementsByClassName('btn');
-    if (button) {
-        button = button[0];
-        button.classList.add('loading');
-        button.disabled = true;
-        button.textContent = 'Logging in...';
+    let form = document.getElementById('login-demo'),
+        desktop = document.getElementById('desktop');
+    if (form) {
+        form.parentElement.style.display = 'none';
     }
-    setTimeout(
-        function () {
-            let form = document.getElementById('login-demo'),
-                desktop = document.getElementById('desktop');
-            if (form) {
-                form.parentElement.style.display = 'none';
-            }
-            if (desktop) {
-                desktop.style.display = 'grid';
-            }
-        },
-        1000
-    );
+    if (desktop) {
+        desktop.style.display = 'grid';
+    }
 }
 
 function startTyping(text, formElementSelectorId, delay) {

@@ -21,7 +21,6 @@
     overflow: hidden;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
     box-shadow: 0 0 15px var(--color-green-black);
-    font-family: 'OCR A', 'Courier New', monospace;
 }
 
 .screen:before {
