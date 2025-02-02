@@ -3,24 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV - Desktop</title>
+    <title>Vladyslav Skrypnyk - CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="desktop" id="desktop">
-    <div class="icon" onclick="openWindow('about')"><img src="images/file.png" alt="Folder"><p>About Me</p></div>
-    <div class="icon" onclick="openWindow('experience')"><img src="images/file.png" alt="Folder"><p>Experience</p></div>
-    <div class="icon" onclick="openWindow('projects')"><img src="images/file.png" alt="Folder"><p>Projects</p></div>
-    <div class="icon" onclick="openWindow('skills')"><img src="images/file.png" alt="Folder"><p>Skills</p></div>
-    <div class="icon" onclick="openWindow('contact')"><img src="images/file.png" alt="Folder"><p>Contact</p></div>
+<div class="screen-container">
+    <div class="screen">
+        <div class="desktop" id="desktop">
+            <div class="icon" onclick="openWindow('about')"><img src="images/file.png" alt="File Icon"><p>About Me</p></div>
+            <div class="icon" onclick="openWindow('experience')"><img src="images/file.png" alt="File Icon"><p>Experience</p></div>
+            <div class="icon" onclick="openWindow('projects')"><img src="images/file.png" alt="File Icon"><p>Projects</p></div>
+            <div class="icon" onclick="openWindow('skills')"><img src="images/file.png" alt="File Icon"><p>Skills</p></div>
+            <div class="icon" onclick="openWindow('contact')"><img src="images/file.png" alt="File Icon"><p>Contact</p></div>
+        </div>
+        <div class="login-demo-container">
+            <form class="login-demo" id="login-demo" action="">
+                <div class="form-group">
+                    <label for="email-input">Email address</label>
+                    <input type="text" class="form-control global-font" id="email-input" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="password-input">Password</label>
+                    <input type="password" class="form-control global-font" id="password-input" disabled>
+                </div>
+                <button type="button" class="btn btn-primary global-font">Sign In</button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <div id="about" class="window">
     <div class="title-bar">
         <span>Magento 2 Backend Developer</span>
+        <button onclick="minimize('about')">_</button>
         <button onclick="closeWindow('about')">✖</button>
     </div>
-    <div class="content">
+    <div class="content" id="content">
         <p>
             Experienced Magento 2 developer who focuses on designing and upgrading eCommerce solutions.
             Capable of changing modules, integrating third-party services, and increasing performance on both
@@ -31,8 +49,8 @@
     </div>
 </div>
 <div id="experience" class="window">
-    <div class="title-bar" >
-        <span>Experience</span>
+    <div class="title-bar">
+        <span>Work Experience</span>
         <button onclick="closeWindow('experience')">✖</button>
     </div>
     <div class="content">
@@ -51,18 +69,8 @@
     </div>
 </div>
 
-<form class="login-demo" id="login-demo" action="">
-    <div class="form-group">
-        <label for="email-input">Email address</label>
-        <input type="text" class="form-control global-font" id="email-input" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-        <label for="password-input">Password</label>
-        <input type="password" class="form-control global-font" id="password-input" placeholder="Password">
-    </div>
-    <button type="button" class="btn btn-primary global-font" onclick="demoLogin()">Login</button>
-</form>
-
-<script src="scripts.js"></script>
+<script src="data.js"></script>
+<script src="window.js"></script>
+<script src="login-demo.js"></script>
 </body>
 </html>
