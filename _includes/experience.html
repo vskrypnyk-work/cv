@@ -6,7 +6,7 @@
     <div class="content folder">
         {% for section in site.exp_list %}
         <div class="icon" onclick="openWindow('{{ section.id }}')">
-            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".png" }}" alt="File Icon">
+            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".png" | relative_url }}" alt="File Icon">
             <p>{{ section.title }}</p>
         </div>
         {% endfor %}

@@ -6,7 +6,7 @@
                     <div class="desktop" id="desktop">
                         {% for section in site.sections %}
                         <div class="icon" onclick="openWindow('{{ section.id }}')">
-                            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".png" }}" alt="File Icon">
+                            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".png" | relative_url}}" alt="File Icon">
                             <p>{{ section.title }}</p>
                         </div>
                         {% endfor %}
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="logo">
-                <img src="{{ '/assets/images/magento-icon.png'}}" alt="File Icon">
+                <img src="{{ '/assets/images/magento-icon.png' | relative_url}}" alt="File Icon">
             </div>
             <div class="opening">
                 <div class="opening-inner">
