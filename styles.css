@@ -6,9 +6,8 @@
 @import url("styles/login-demo.css");
 @import url("styles/screen.css");
 @import url("styles/macintosh.css");
+@import url("styles/dark-mode.css");
 
-
-/* Стили для общей страницы */
 body {
     background-color: #EDEEF0;
     font-family: "Apple System", sans-serif;
@@ -32,7 +31,6 @@ html, body {
     overflow: hidden;
 }
 
-/* Анимация для движения линий сверху вниз по кругу */
 @keyframes moveLines {
     0% {
         transform: translateY(0);
@@ -42,7 +40,6 @@ html, body {
     }
 }
 
-/* Кнопка закрытия окна */
 button {
     background-color: #555;
     border: none;
@@ -58,7 +55,15 @@ button:hover {
     background-color: #777;
 }
 
-/* Анимация появления окна */
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    color: var(--color-black);
+    padding-top: 15%;
+}
+
 @keyframes windowOpen {
     from {
         transform: scale(0.8);

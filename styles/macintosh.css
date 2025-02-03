@@ -1,7 +1,7 @@
 .macintosh {
     display: block;
-    width: 680px; /* Увеличено в 2 раза */
-    height: 950px; /* Увеличено в 2 раза */
+    width: 680px;
+    height: 950px;
     margin: 125px auto;
     position: relative;
     box-shadow: 0 160px 120px -120px rgba(0,0,0,0.4);
@@ -11,7 +11,7 @@
     z-index: 2;
     display: block;
     width: 100%;
-    height: 820px; /* Увеличено в 2 раза */
+    height: 820px;
     border-radius: 15px;
     background-color: #DDDBC2;
     position: absolute;
@@ -26,8 +26,8 @@
 
 .monitor-inner {
     display: block;
-    width: 640px; /* Увеличено в 2 раза */
-    height: 720px; /* Увеличено в 2 раза */
+    width: 640px;
+    height: 720px;
     background-image: linear-gradient(#CAC6A9, #CFCEB0);
     margin: auto;
     position: absolute;
@@ -39,8 +39,8 @@
 
 .screen-cutout {
     display: block;
-    width: 560px; /* Увеличено в 2 раза */
-    height: 450px; /* Увеличено в 2 раза */
+    width: 560px;
+    height: 450px;
     background-color: #DDDBC2;
     margin: auto;
     position: absolute;
@@ -58,8 +58,8 @@
 
 .screen {
     display: block;
-    width: 520px; /* Увеличено в 2 раза */
-    height: 390px; /* Увеличено в 2 раза */
+    width: 520px;
+    height: 390px;
     background-color: #4F5555;
     background-image: radial-gradient(#525B5A, #50585A);
     margin: auto;
@@ -73,13 +73,13 @@
 
 .logo {
     display: block;
-    width: 44px; /* Увеличено в 2 раза */
-    height: 44px; /* Увеличено в 2 раза */
+    width: 44px;
+    height: 44px;
     background-image: radial-gradient(#C9C6B5, #CBC9BA);
     border-radius: 2px;
     position: absolute;
-    left: 44px; /* Увеличено в 2 раза */
-    bottom: 44px; /* Увеличено в 2 раза */
+    left: 44px;
+    bottom: 44px;
     box-shadow: 0 0 4px 0px #979181 inset;
 }
 
@@ -90,37 +90,42 @@
     margin-block-end: 0px;
 }
 
+.logo img {
+    width: 44px;
+    height: 44px;
+}
+
 .opening {
     display: block;
-    width: 310px; /* Увеличено в 2 раза */
-    height: 30px; /* Увеличено в 2 раза */
+    width: 310px;
+    height: 30px;
     background-image: linear-gradient(
             #BEBB9C, #CAC8A7 74.5% 75.5%);
     background-image: conic-gradient(
             #BEBB9C 0% 23.5%, #C7C2A2 24.5% 25%, #DCD8BD 26% 73.5%, #CAC8A7 74.5% 75.5%, #BEBB9C 76.5%);
     position: absolute;
-    bottom: 110px; /* Увеличено в 2 раза */
-    right: 42px; /* Увеличено в 2 раза */
+    bottom: 110px;
+    right: 42px;
     border-radius: 4px;
 }
 
 .opening-inner {
     display: block;
-    width: 252px; /* Увеличено в 2 раза */
-    height: 16px; /* Увеличено в 2 раза */
+    width: 252px;
+    height: 16px;
     background-color: #181914;
     border-radius: 2px;
     margin: auto;
     position: absolute;
     left: 0;
     right: 0;
-    top: 7px; /* Увеличено в 2 раза */
+    top: 7px;
 }
 
 .foot {
     display: block;
     width: 100%;
-    height: 170px; /* Увеличено в 2 раза */
+    height: 170px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,12 +140,12 @@
 
 .inset {
     display: inline;
-    width: 32px; /* Увеличено в 2 раза */
-    height: 32px; /* Увеличено в 2 раза */
+    width: 32px;
+    height: 32px;
     background-color: #C3BEA0;
     position: absolute;
-    bottom: 40px; /* Увеличено в 2 раза */
-    left: 70px; /* Увеличено в 2 раза */
+    bottom: 40px;
+    left: 70px;
     border-radius: 2px;
     box-shadow: 0 0 4px #C9C3A3 inset,
     0 0px 4px 2px #BCB694;
@@ -148,12 +153,12 @@
 
 .cable-container {
     display: block;
-    width: 120px; /* Увеличено в 2 раза */
-    height: 60px; /* Увеличено в 2 раза */
+    width: 120px;
+    height: 60px;
     background-color: #C3BEA0;
     position: absolute;
-    right: 60px; /* Увеличено в 2 раза */
-    bottom: 30px; /* Увеличено в 2 раза */
+    right: 60px;
+    bottom: 30px;
     border-radius: 3px;
     box-shadow: 0 4px 2px -2px #D0CBAE inset,
     8px 0 2px -2px #BAB492 inset,
@@ -163,12 +168,12 @@
 
 .cable-hole {
     display: block;
-    width: 36px; /* Увеличено в 2 раза */
-    height: 40px; /* Увеличено в 2 раза */
+    width: 36px;
+    height: 40px;
     background-color: #848580;
     position: absolute;
     top: 10px;
-    right: 14px; /* Увеличено в 2 раза */
+    right: 14px;
     border-radius: 3px;
     box-shadow: 0 -8px 1px -1px rgba(25,25,25,0.2) inset,
     -4px 0 1px -1px rgba(25,25,25,0.2) inset,

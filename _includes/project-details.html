@@ -1,0 +1,35 @@
+{% for project in site.projects_list %}
+<div id="{{ project.id }}" class="window">
+    <div class="title-bar">
+        <span>{{ project.title }}</span>
+        <button onclick="minimize('{{ project.id }}')">_</button>
+        <button onclick="closeWindow('{{ project.id }}')">✖</button>
+    </div>
+    <div class="content">
+        {% for cont in project.content %}
+            {%- if cont.role -%}
+            <p><strong>Role: </strong>{{ cont.role | strip }}</p>
+            {%- endif -%}
+            {%- if cont.description -%}
+            <p><strong>Description: </strong>{{ cont.description | strip }}</p>
+            {%- endif -%}
+            {%- if cont.resp.size > 0 -%}
+            <p><strong>Responsibilities: </strong></p>
+            <ul>
+                {% for respon in cont.resp %}
+                <li>{{respon.title | strip }}</li>
+                {% endfor %}
+            </ul>
+            {%- endif -%}
+            {%- if cont.achieve -%}
+            <p><strong>Achievements: </strong></p>
+            <ul>
+                {% for ach in cont.achieve %}
+                <li>{{ach.title | strip }}</li>
+                {% endfor %}
+            </ul>
+            {%- endif -%}
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}

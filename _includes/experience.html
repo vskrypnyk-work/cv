@@ -1,0 +1,14 @@
+<div id="{{ site.exp_id }}" class="window">
+    <div class="title-bar">
+        <span>Work Experience</span>
+        <button onclick="closeWindow('{{ site.exp_id }}')">✖</button>
+    </div>
+    <div class="content folder">
+        {% for section in site.exp_list %}
+        <div class="icon" onclick="openWindow('{{ section.id }}')">
+            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".png" }}" alt="File Icon">
+            <p>{{ section.title }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

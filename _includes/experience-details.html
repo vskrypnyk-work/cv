@@ -1,0 +1,17 @@
+{% for section in site.exp_list %}
+<div id="{{ section.id }}" class="window">
+    <div class="title-bar">
+        <span>{{ section.company-name }}</span>
+        <button onclick="minimize('{{ section.id }}')">_</button>
+        <button onclick="closeWindow('{{ section.id }}')">✖</button>
+    </div>
+    <div class="content">
+        Responsibilities
+        <ul>
+            {% for resp in section.responsibilities %}
+            <li>{{ resp.title | strip | markdownify }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endfor %}

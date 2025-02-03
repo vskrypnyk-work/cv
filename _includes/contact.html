@@ -1,0 +1,21 @@
+<div id="contact" class="window">
+    <div class="title-bar">
+        <span>Contact Details</span>
+        <button onclick="minimize('contact')">_</button>
+        <button onclick="closeWindow('contact')">✖</button>
+    </div>
+    <div class="content">
+        {%- if site.email -%}
+        <p>
+            <strong>{{ site.email_title | default: "Email" }}</strong>: <a class="link" href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
+        </p>
+        {%- endif -%}
+        {%- if site.linkedin_username -%}
+        <p>
+            <strong>
+                LinkedIn: <a class="link" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" target="_blank">{{ site.name }}</a>
+            </strong>
+        </p>
+        {%- endif -%}
+    </div>
+</div>

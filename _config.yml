@@ -1,0 +1,208 @@
+# Site
+repository: vskrypnyk-work/cv
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 1
+
+# Personal info
+name: Vladyslav Skrypnyk
+title: Magento 2 Backend Developer
+email: vskrypnyk.work@gmail.com
+
+# Social links
+linkedin_username: v-skrypnyk
+
+#Sections
+sections:
+  - title: About Me
+    id: about
+    image-type: file
+  - title: Experience
+    id: experience
+    image-type: folder
+  - title: Projects
+    id: projects
+    image-type: folder
+  - title: Skills
+    id: skills
+    image-type: file
+  - title: Contact
+    id: contact
+    image-type: file
+
+# About Section
+about_title: Magento 2 Backend Developer
+about_id: about
+about_content: |
+  Experienced Magento 2 developer who focuses on designing and upgrading eCommerce solutions.
+  Capable of changing modules, integrating third-party services, and increasing performance on both
+  CE and EE versions. Proficient in PHP 8.2, database optimization, and building scalable solutions for
+  multi-site platforms. Strong knowledge of Magento architecture, MSI, and frontend/backend
+  development, with an emphasis on delivering user-friendly and high-performance solutions.
+
+# Experience Section
+exp_title: Work Experience
+exp_id: experience
+exp_list:
+  - title: 2019-2020
+    id: 2019-2020
+    image-type: file
+    company-name: Kozak Group
+    responsibilities:
+      - title: Built a strong foundation in Magento 2, including core features and architecture.
+      - title: Explored Magento’s ecosystem, development tools, and troubleshooting methods.
+      - title: Completed in-depth training on modules, Dependency Injection (DI), and EAV.
+      - title: Participated in an intensive 2-month program with hands-on Magento 2 development.
+      - title: Focused on backend tasks in a multi-person team.
+      - title: Worked on real client tickets, including bug fixes and feature development.
+
+  - title: 2020-Present
+    id: 2020-Present
+    image-type: file
+    company-name: Binary Anvil
+    responsibilities:
+      - title: Quickly diagnose and resolve issues (avg. resolution 2h).
+      - title: Develop action plans with clear steps, tools, and time estimates.
+      - title: Document solutions, referencing code and alternative approaches.
+      - title: Prioritize tasks (S1-S4) and ensure timely stakeholder communication.
+      - title: Participate in meetings to align on project scope and priorities.
+      - title: Analyze tasks and draft implementation plans with accurate estimates.
+      - title: Work with third-party integrations such as Yotpo, Listrak, Algolia, Celigo, Bistrak, Oracle, SheerID, custom ERPs.
+      - title: Design and implement complex Magento solutions, including custom checkout features.
+      - title: Conduct code reviews to ensure quality and best practices.
+      - title: Optimize and upgrade projects for smooth Magento version transitions.
+      - title: Provide end-to-end support from development to ticket closure.
+      - title: Mentor and train new team members.
+
+# Projects Section
+projects_title: Projects
+projects_id: projects
+projects_list:
+  - title: Project under NDA
+    id: project-1
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Upgraded Magento from 2.3.7-p3 to 2.4.7-p1, ensuring seamless functionality and performance improvements.
+      - resp:
+          - title: Verified compatibility of custom modules and third-party extensions.
+          - title: Updated dependencies and refactored code to meet new Magento standards.
+          - title: Conducted thorough regression testing to prevent functionality loss.
+          - title: Optimized key functionalities for better performance and efficiency.
+      - achieve:
+          - title: Successfully completed the upgrade on schedule, resolving critical issues.
+          - title: Enhanced platform performance post-upgrade.
+  - title: Project under NDA
+    id: project-2
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Improved long-term performance for a high-traffic Magento store by optimizing code, troubleshooting issues, and integrating new technologies.
+      - resp:
+          - title: Identified and resolved performance bottlenecks across the Magento platform.
+          - title: Implemented automated monitoring with New Relic for proactive issue detection.
+          - title: Integrated customer, order, and invoice synchronization with a custom ERP.
+          - title: Developed custom logic for product-specific pricing and dynamic updates.
+          - title: Built custom indexing solutions to minimize reindexing downtime.
+      - achieve:
+          - title: Optimized order processing, reducing Magento-side workload.
+          - title: Improved system uptime by 30% during peak traffic.
+          - title: Provided ongoing support, ensuring stability for 4+ years.
+  - title: Project under NDA
+    id: project-3
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Maintained and supported a Magento-based project, ensuring stability and performance.
+      - resp:
+          - title: Diagnosed and fixed bugs, and optimized backend processes.
+          - title: Improved database queries and overall system performance.
+          - title: Applied security patches and conduct code reviews.
+          - title: Provided ongoing support and incident resolution.
+      - achieve:
+          - title: Reduced downtime and enhanced platform stability.
+          - title: Increased performance through code optimizations.
+          - title: Ensured seamless operation.
+  - title: Project under NDA
+    id: project-4
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Played a key role in the end-to-end development of a Magento-based project, contributing from the initial planning phase through to the successful live launch.
+      - resp:
+          - title: Developed custom modules and integrations to extend Magento functionality.
+          - title: Performed functional, performance, and security testing for platform reliability.
+          - title: Collaborated with frontend teams to ensure a seamless user experience.
+          - title: Provided technical support pre- and post-launch for a smooth go-live.
+      - achieve:
+          - title: Delivered the project on time and within budget with all core features.
+          - title: Built a solid technical foundation for future enhancements.
+  - title: Project under NDA
+    id: project-5
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Participated in the development of massive functionality to integrate the Auction into Magento site.
+      - resp:
+          - title: Developed custom modules and integrations to extend Magento functionality.
+          - title: Development of a unique PLP format.
+          - title: Development of import/export auctions.
+          - title: Developing a unique grid and forms for auctions
+  - title: General Support Projects
+    id: project-6
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Support of projects for a long period.
+      - resp:
+          - title: Bug fixing
+          - title: Modifications to existing functionality
+
+# Skills Section
+skills_title: Skills
+skills_id: skills
+skills_list:
+  - title: Core Magento 2 Skills
+    options:
+      - title: Magento 2 Architecture such as Module creation, Dependency Injection (DI) and so on.
+      - title: Customizations such as Checkout flows, product types, swatches, and advanced admin configurations.
+      - title: Database Management such as EAV structure, flat tables, indexers, and MySQL query optimization.
+      - title: API Development such as REST and GraphQL endpoints.
+      - title: Magento UI Components - Customization and integration.
+      - title: JavaScript such as Knockout.js, jQuery, Underscore
+  - title: Tools & Workflow
+    options:
+      - title: Version Control - Git (feature branching, pull requests, code reviews).
+      - title: Development Tools - LAMP, Warden, Postman.
+  - title: Third-Party Integrations
+    options:
+      - title: Integrated systems such as Yotpo, Algolia, Listrak, Oracle, SheerID, custom ERPs.
+      - title: Shipping Services - ShipperHQ.
+  - title: Soft Skills
+    options:
+      - title: Task Prioritization - Experienced with S1-S4 task levels.
+      - title: Team Collaboration - Agile/Scrum methodologies, mentoring junior developers.
+      - title: Documentation - Writing technical documentation and implementation plans.
+  - title: Soft Skills
+    options:
+      - title: Ukrainian - Native.
+      - title: Russian - Native.
+      - title: English - Intermediate (able to communicate effectively in technical and business contexts).
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+]

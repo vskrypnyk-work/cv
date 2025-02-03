@@ -1,0 +1,12 @@
+<div id="{{ site.about_id }}" class="window">
+    <div class="title-bar">
+        <span>{{ site.about_title }}</span>
+        <button onclick="minimize('{{ site.about_id }}')">_</button>
+        <button onclick="closeWindow('{{ site.about_id }}')">✖</button>
+    </div>
+    <div class="content" id="content">
+        <p>
+            {{ site.about_content }}
+        </p>
+    </div>
+</div>

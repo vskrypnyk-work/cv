@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{%- include head.html -%}
+<body>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+    {%- include macintosh.html -%}
+    {%- include about.html -%}
+    {%- include experience.html -%}
+    {%- include experience-details.html -%}
+    {%- include projects.html -%}
+    {%- include project-details.html -%}
+    {%- include contact.html -%}
+    {%- include skills.html -%}
+    <script src="{{ '/assets/js/data.js'}}"></script>
+    <script src="{{ '/assets/js/login-demo.js'}}"></script>
+    <script src="{{ '/assets/js/window.js'}}"></script>
+    <script src="{{ '/assets/js/dark-mode.js'}}"></script>
+</body>
+</html>

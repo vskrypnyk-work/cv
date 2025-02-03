@@ -1,0 +1,21 @@
+<div id="{{ site.skills_id }}" class="window">
+    <div class="title-bar">
+        <span>{{ site.skills_title }}</span>
+        <button onclick="minimize('{{ site.skills_id }}')">_</button>
+        <button onclick="closeWindow('{{ site.skills_id }}')">✖</button>
+    </div>
+    <div class="content">
+        {% for skill in site.skills_list %}
+            {%- if skill.title -%}
+            <p><strong>{{ skill.title | strip }}</strong></p>
+            {%- endif -%}
+            {%- if skill.options -%}
+            <ul>
+                {% for option in skill.options %}
+                <li>{{option.title | strip }}</li>
+                {% endfor %}
+            </ul>
+            {%- endif -%}
+        {% endfor %}
+    </div>
+</div>

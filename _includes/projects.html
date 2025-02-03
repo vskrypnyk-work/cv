@@ -1,0 +1,14 @@
+<div id="{{ site.projects_id }}" class="window">
+    <div class="title-bar">
+        <span>{{ site.projects_title }}</span>
+        <button onclick="closeWindow('{{ site.projects_id }}')">✖</button>
+    </div>
+    <div class="content folder">
+        {% for project in site.projects_list %}
+        <div class="icon" onclick="openWindow('{{ project.id }}')">
+            <img src="{{ project.image-type | prepend: "/assets/images/icon-" | append: ".png" }}" alt="File Icon">
+            <p>{{ project.title }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
