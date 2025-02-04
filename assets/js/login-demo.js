@@ -6,12 +6,16 @@ async function demoLogin() {
     await new Promise(resolve => setTimeout(resolve, 500));
     await startTyping(data.password.text, data.password.formElementSelectorId, timeout);
     let form = document.getElementById('login-demo'),
-        desktop = document.getElementById('desktop');
+        desktop = document.getElementById('desktop'),
+        clock = document.getElementById('clock');
     if (form) {
         form.parentElement.style.display = 'none';
     }
     if (desktop) {
         desktop.style.display = 'grid';
+    }
+    if (clock) {
+        clock.style.display = 'block'
     }
 }
 

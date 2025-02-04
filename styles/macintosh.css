@@ -148,7 +148,7 @@
     left: 70px;
     border-radius: 2px;
     box-shadow: 0 0 4px #C9C3A3 inset,
-    0 0px 4px 2px #BCB694;
+    0 0 4px 2px #BCB694;
 }
 
 .cable-container {
@@ -188,4 +188,14 @@
             #181914 30% 70%,
             transparent 70%
     );
+}
+
+.clock {
+    position: absolute;
+    bottom: 4.5%;
+    right: 3.5%;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: none;
 }
