@@ -15,18 +15,19 @@ body.dark-mode {
     bottom: 20px;
     right: 20px;
     padding: 10px 15px;
-    background: #FFF;
+    color: #FFF;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    color: var(--color-black);
+    background: var(--color-black);
+    z-index: 10;
 }
 
 .dark-mode #darkModeToggle {
-    background: #333;
-    color: #FFF;
+    color: #333;
+    background: #FFF;
 }
 
 .dark-mode .logo {
