@@ -6,7 +6,7 @@
                     <div class="desktop" id="desktop">
                         {% for section in site.sections %}
                         <div class="icon" onclick="openWindow('{{ section.id }}')">
-                            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".webp" | relative_url}}" alt="File Icon">
+                            <img src="{{ section.image-type | prepend: "/assets/images/icon-" | append: ".webp" | relative_url}}" width="40px" height="40px" alt="File Icon">
                             <p>{{ section.title }}</p>
                         </div>
                         {% endfor %}
@@ -14,12 +14,12 @@
                     {%- include login-demo.html -%}
                     <div class="clock" id="clock"></div>
                     <button class="settings-btn" id="settings-icon">
-                        <img src="{{ '/assets/images/icon-settings.webp' | relative_url}}" alt="Settings">
+                        <img src="{{ '/assets/images/icon-settings.webp' | relative_url}}" width="40px" height="40px" alt="Settings">
                     </button>
                 </div>
             </div>
             <div class="logo">
-                <img src="{{ '/assets/images/magento-icon.png' | relative_url}}" alt="File Icon">
+                <img src="{{ '/assets/images/magento-icon.png' | relative_url}}" width="40px" height="40px" alt="File Icon">
             </div>
             <div class="opening">
                 <div class="opening-inner">
