@@ -1,0 +1,121 @@
+.settings-btn {
+    position: absolute;
+    bottom: 4.5%;
+    left: 2.5%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    display: none;
+    padding: 5px 10px 0;
+}
+
+.settings-btn:hover {
+    background: none;
+}
+
+
+.settings-btn img {
+    width: 85%;
+    height: 85%;
+}
+
+.settings-menu {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background: black;
+    color: green;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px green;
+    display: none;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    font-family: "Chicago", sans-serif;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: green;
+}
+
+.radio-label input {
+    display: none;
+}
+
+.radio-label input:checked + .custom-radio::after {
+    display: block;
+}
+
+.radio-group {
+    margin-left: 2%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #444;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #444;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

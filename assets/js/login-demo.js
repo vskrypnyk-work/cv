@@ -7,7 +7,8 @@ async function demoLogin() {
     await startTyping(data.password.text, data.password.formElementSelectorId, timeout);
     let form = document.getElementById('login-demo'),
         desktop = document.getElementById('desktop'),
-        clock = document.getElementById('clock');
+        clock = document.getElementById('clock'),
+        settingsIcon = document.getElementById('settings-icon');
     if (form) {
         form.parentElement.style.display = 'none';
     }
@@ -16,6 +17,9 @@ async function demoLogin() {
     }
     if (clock) {
         clock.style.display = 'block'
+    }
+    if (settingsIcon) {
+        settingsIcon.style.display = 'inline-block';
     }
 }
 

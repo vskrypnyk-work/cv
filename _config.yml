@@ -188,11 +188,16 @@ skills_list:
     options:
       - title: Ukrainian - Native.
       - title: Russian - Native.
-      - title: English - Intermediate (able to communicate effectively in technical and business contexts).
+      - title: English - Upper-Intermediate
 
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 exclude : [
   "Gemfile",
