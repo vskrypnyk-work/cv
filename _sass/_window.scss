@@ -9,18 +9,18 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     z-index: 100;
-}
 
-.window .title-bar {
-    cursor: move;
-}
+    .title-bar {
+        cursor: move;
+    }
 
-.window.active {
-    display: block;
-    animation: windowOpen 0.5s ease-out;
-    z-index: 20;
-}
+    &.active {
+        display: block;
+        animation: windowOpen 0.5s ease-out;
+        z-index: 20;
+    }
 
-.window.minimized {
-    height: auto;
+    &.minimized {
+        height: auto;
+    }
 }

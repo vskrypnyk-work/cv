@@ -6,7 +6,6 @@
     position: relative;
     box-shadow: 0 160px 120px -120px rgba(0,0,0,0.4);
 }
-
 .monitor {
     z-index: 2;
     display: block;
@@ -16,14 +15,13 @@
     background-color: #DDDBC2;
     position: absolute;
     background-image: linear-gradient(
-            #DDDBC2, #DFDAC4
+                    #DDDBC2, #DFDAC4
     );
     background-image: conic-gradient(
-            #DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%
+                    #DDDBC2 0 10.5%, #ECECD5 11% 11.5%, #CECDAF 12% 38%, #C8C4A7 39% 61.5%, #C7C3A6 62% 88%, #DFDAC4 88.5% 89%, #DDDBC2 89.25%
     );
     box-shadow: 0 120px 40px -40px rgba(142,137,97,0.5);
 }
-
 .monitor-inner {
     display: block;
     width: 640px;
@@ -36,7 +34,6 @@
     right: 0;
     border-radius: 5px;
 }
-
 .screen-cutout {
     display: block;
     width: 560px;
@@ -49,13 +46,12 @@
     top: 40px;
     border-radius: 5px;
     background-image: linear-gradient(
-            #938F6A, #E0DFC3
+                    #938F6A, #E0DFC3
     );
     background-image: conic-gradient(
-            #938F6A 12.5%, #B5B293 15.5% 33%, #E0DFC3 34% 65.5%, #C2C1A2 66.5% 83.5%, #938F6A 86.5%
+                    #938F6A 12.5%, #B5B293 15.5% 33%, #E0DFC3 34% 65.5%, #C2C1A2 66.5% 83.5%, #938F6A 86.5%
     );
 }
-
 .screen {
     display: block;
     width: 520px;
@@ -70,7 +66,6 @@
     border-radius: 20px;
     box-shadow: 0 0 40px 20px #2B3030 inset;
 }
-
 .logo {
     display: block;
     width: 44px;
@@ -81,34 +76,30 @@
     left: 44px;
     bottom: 44px;
     box-shadow: 0 0 4px 0px #979181 inset;
+    p {
+        text-align: center;
+        margin-block-start: 3px;
+        font-size: 35px;
+        margin-block-end: 0px;
+    }
+    img {
+        width: 44px;
+        height: 44px;
+    }
 }
-
-.logo p {
-    text-align: center;
-    margin-block-start: 3px;
-    font-size: 35px;
-    margin-block-end: 0px;
-}
-
-.logo img {
-    width: 44px;
-    height: 44px;
-}
-
 .opening {
     display: block;
     width: 310px;
     height: 30px;
     background-image: linear-gradient(
-            #BEBB9C, #CAC8A7 74.5% 75.5%);
+                    #BEBB9C, #CAC8A7 74.5% 75.5%);
     background-image: conic-gradient(
-            #BEBB9C 0% 23.5%, #C7C2A2 24.5% 25%, #DCD8BD 26% 73.5%, #CAC8A7 74.5% 75.5%, #BEBB9C 76.5%);
+                    #BEBB9C 0% 23.5%, #C7C2A2 24.5% 25%, #DCD8BD 26% 73.5%, #CAC8A7 74.5% 75.5%, #BEBB9C 76.5%);
     position: absolute;
     bottom: 110px;
     right: 42px;
     border-radius: 4px;
 }
-
 .opening-inner {
     display: block;
     width: 252px;
@@ -121,7 +112,6 @@
     right: 0;
     top: 7px;
 }
-
 .foot {
     display: block;
     width: 100%;
@@ -137,7 +127,6 @@
     0 64px 6px -14px #C1BE9F inset,
     0 -12px 6px -8px #AEAA87 inset;
 }
-
 .inset {
     display: inline;
     width: 32px;
@@ -150,7 +139,6 @@
     box-shadow: 0 0 4px #C9C3A3 inset,
     0 0 4px 2px #BCB694;
 }
-
 .cable-container {
     display: block;
     width: 120px;
@@ -165,7 +153,6 @@
     -10px 0 4px -4px #A8A281 inset,
     0 -8px 4px -6px #ADA88B inset;
 }
-
 .cable-hole {
     display: block;
     width: 36px;
@@ -179,17 +166,16 @@
     -4px 0 1px -1px rgba(25,25,25,0.2) inset,
     4px 0 1px -1px rgba(25,25,25,0.2) inset;
     background-image: linear-gradient(
-            #848580 20%,
-            transparent 20% 80%,
-            #848580 80%
+                    #848580 20%,
+                    transparent 20% 80%,
+                    #848580 80%
     ), linear-gradient(
-            90deg,
-            transparent 30%,
-            #181914 30% 70%,
-            transparent 70%
+                    90deg,
+                    transparent 30%,
+                    #181914 30% 70%,
+                    transparent 70%
     );
 }
-
 .clock {
     position: absolute;
     bottom: 4.5%;

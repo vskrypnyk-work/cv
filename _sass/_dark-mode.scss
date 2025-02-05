@@ -1,15 +1,14 @@
-body.dark-mode {
-    background-color: var(--bg-color);
+body {
+    &.dark-mode {
+        background-color: var(--bg-color);
+    }
 }
-
 .monitor {
     background-color: var(--monitor-color);
 }
-
 .screen {
     background-color: var(--screen-bg);
 }
-
 #darkModeToggle {
     position: fixed;
     bottom: 20px;
@@ -24,26 +23,24 @@ body.dark-mode {
     background: var(--color-black);
     z-index: 10;
 }
-
-.dark-mode #darkModeToggle {
-    color: #333;
-    background: #FFF;
-}
-
-.dark-mode .logo {
-    filter: brightness(1.5) drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
-}
-
-.dark-mode .screen {
-    background-color: #1A1A1A;
-    background-image: linear-gradient(
-            to bottom,
-            #4CAF50 5%,
-            #2E7D32 20%,
-            #1B5E20 95%
-    );
-}
-
-.dark-mode .macintosh {
-    box-shadow: 0 160px 120px -100px rgba(255, 255, 255, 0.5);
+.dark-mode {
+    #darkModeToggle {
+        color: #333;
+        background: #FFF;
+    }
+    .logo {
+        filter: brightness(1.5) drop-shadow(0 0 5px rgba(255, 255, 255, 0.8));
+    }
+    .screen {
+        background-color: #1A1A1A;
+        background-image: linear-gradient(
+                        to bottom,
+                        #4CAF50 5%,
+                        #2E7D32 20%,
+                        #1B5E20 95%
+        );
+    }
+    .macintosh {
+        box-shadow: 0 160px 120px -100px rgba(255, 255, 255, 0.5);
+    }
 }
