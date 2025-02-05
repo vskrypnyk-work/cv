@@ -36,14 +36,20 @@
         );
         animation: scan 2s linear infinite;
         pointer-events: none;
+        will-change: transform;
+        backface-visibility: hidden; /* only optimization purpose */
+        transform: translateY(0);
     }
 }
 
 @keyframes scan {
     0% {
-        top: -100%;
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(100%);
     }
     100% {
-        top: 100%;
+        transform: translateY(200%); /* Делаем так, чтобы второй элемент стартовал сразу после первого */
     }
 }

@@ -6,7 +6,7 @@
     <div class="content folder">
         {% for project in site.projects_list %}
         <div class="icon" onclick="openWindow('{{ project.id }}')">
-            <img src="{{ project.image-type | prepend: "/assets/images/icon-" | append: ".png"  | relative_url}}" alt="File Icon">
+            <img src="{{ project.image-type | prepend: "/assets/images/icon-" | append: ".webp"  | relative_url}}" alt="File Icon">
             <p>{{ project.title }}</p>
         </div>
         {% endfor %}
