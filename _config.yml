@@ -198,6 +198,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
+watch: true
 
 exclude : [
   "Gemfile",

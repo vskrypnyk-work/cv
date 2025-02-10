@@ -1,19 +1,25 @@
 let isDragging = false;
 let offsetX, offsetY;
 let currentWindow = null;
+let currentPosition = null;
+const positions = ['shift-left', 'shift-top', 'shift-right', 'shift-bottom'];
 
 function openWindow(windowId) {
     const windowElement = document.getElementById(windowId);
     if (windowElement) {
-        windowElement.style.display = 'block'; // Показываем окно
+        windowElement.style.display = 'block';
         currentWindow = windowElement;
+        const nextPosition = positions[(positions.indexOf(currentPosition) + 1) % positions.length];
+        windowElement.classList.remove(currentPosition);
+        windowElement.classList.add(nextPosition);
+        currentPosition = nextPosition;
     }
 }
 
 function closeWindow(windowId) {
     const windowElement = document.getElementById(windowId);
     if (windowElement) {
-        windowElement.style.display = 'none'; // Скрываем окно
+        windowElement.style.display = 'none';
     }
 }
 

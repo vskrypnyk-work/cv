@@ -9,7 +9,6 @@
 @import "dark-mode";
 @import "settings";
 
-
 body {
   background-color: #EDEEF0;
   font-family: "Apple System", sans-serif;
@@ -31,15 +30,6 @@ html, body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-@keyframes moveLines {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100%);
-  }
 }
 
 button {
@@ -64,33 +54,4 @@ button:hover {
   font-size: 13px;
   color: var(--color-black);
   padding-top: 15%;
-}
-
-@keyframes windowOpen {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes iconBounce {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
 }
