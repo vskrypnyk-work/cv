@@ -68,7 +68,7 @@ exp_list:
       - title: Prioritize tasks (S1-S4) and ensure timely stakeholder communication.
       - title: Participate in meetings to align on project scope and priorities.
       - title: Analyze tasks and draft implementation plans with accurate estimates.
-      - title: Work with third-party integrations such as Yotpo, Listrak, Algolia, Celigo, Bistrak, Oracle, SheerID, custom ERPs.
+      - title: Work with third-party integrations such as Yotpo, Listrak, Algolia, Celigo, Bistrak, Oracle, SheerID, Auth0, custom ERPs.
       - title: Design and implement complex Magento solutions, including custom checkout features.
       - title: Conduct code reviews to ensure quality and best practices.
       - title: Optimize and upgrade projects for smooth Magento version transitions.
@@ -149,8 +149,24 @@ projects_list:
           - title: Development of a unique PLP format.
           - title: Development of import/export auctions.
           - title: Developing a unique grid and forms for auctions
-  - title: General Support Projects
+  - title: Project under NDA
     id: project-6
+    image-type: file
+    content:
+      - role: Backend Developer
+      - description: Led the integration of Auth0 authentication and authorization system into a Magento-based project, ensuring secure and seamless user management.
+      - resp:
+          - title: Use of the basic module for further expansion according to the needs of the project
+          - title: Configured and optimized Auth0 settings for seamless single sign-on (SSO) and user identity management.
+          - title: Integrated user authorization behavior with Magento's existing access control system.
+          - title: Ensured compliance with security best practices, including token validation and secure data transmission.
+          - title: Performed extensive testing to guarantee stability and performance.
+          - title: Provided technical support and documentation for further scalability.
+      - achieve:
+          - title: Successfully deployed a fully functional Auth0 integration within the planned timeline.
+          - title: Improved authentication security and user experience with SSO implementation.
+  - title: General Support Projects
+    id: project-7
     image-type: file
     content:
       - role: Backend Developer
@@ -177,7 +193,7 @@ skills_list:
       - title: Development Tools - LAMP, Warden, Postman.
   - title: Third-Party Integrations
     options:
-      - title: Integrated systems such as Yotpo, Algolia, Listrak, Oracle, SheerID, custom ERPs.
+      - title: Integrated systems such as Yotpo, Algolia, Listrak, Oracle, SheerID, Auth0, custom ERPs.
       - title: Shipping Services - ShipperHQ.
   - title: Soft Skills
     options:
