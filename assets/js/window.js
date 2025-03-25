@@ -40,26 +40,50 @@ function startDragging(e) {
     isDragging = true;
     const windowElement = e.target.closest('.window');
     currentWindow = windowElement;
-    offsetX = e.clientX - windowElement.offsetLeft;
-    offsetY = e.clientY - windowElement.offsetTop;
+
+    let clientX, clientY;
+    if (e.touches) {
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+    } else {
+        clientX = e.clientX;
+        clientY = e.clientY;
+    }
+
+    offsetX = clientX - windowElement.offsetLeft;
+    offsetY = clientY - windowElement.offsetTop;
 }
 
 function dragWindow(e) {
-    if (isDragging && currentWindow) {
-        const left = e.clientX - offsetX;
-        const top = e.clientY - offsetY;
-        currentWindow.style.left = left + 'px';
-        currentWindow.style.top = top + 'px';
+    if (!isDragging || !currentWindow) return;
+
+    let clientX, clientY;
+    if (e.touches) {
+        clientX = e.touches[0].clientX;
+        clientY = e.touches[0].clientY;
+    } else {
+        clientX = e.clientX;
+        clientY = e.clientY;
     }
+
+    const left = clientX - offsetX;
+    const top = clientY - offsetY;
+    currentWindow.style.left = left + 'px';
+    currentWindow.style.top = top + 'px';
 }
 
 function stopDragging() {
     isDragging = false;
 }
 
+// Добавляем обработчики событий для ПК и мобильных устройств
 document.querySelectorAll('.title-bar').forEach(titleBar => {
     titleBar.addEventListener('mousedown', startDragging);
+    titleBar.addEventListener('touchstart', startDragging, { passive: false });
 });
 
 document.addEventListener('mousemove', dragWindow);
+document.addEventListener('touchmove', dragWindow, { passive: false });
+
 document.addEventListener('mouseup', stopDragging);
+document.addEventListener('touchend', stopDragging);
