@@ -1,29 +1,35 @@
-@media (min-width: 992px) and (max-width: 1199px) {
+/* Для экранов шириной 576px до 767px (мобильные устройства в альбомной ориентации) */
+@media (min-width: 576px) and (max-width: 767px) {
   .screen-container {
-    width: 1000px;
+    width: 100%;
+    height: 450px;
+  }
+
+  .monitor {
     height: 700px;
   }
 
   .macintosh {
-    width: 750px;
-    height: 950px;
+    width: 80%;
+    height: 750px;
   }
 
   .monitor-inner {
-    width: 700px;
-    height: 900px;
+    width: 95%;
+    height: 650px;
+    top: 25px;
   }
 
   .screen-cutout {
-    width: 700px;
-    height: 890px;
+    width: 92.5%;
+    height: 400px;
     position: relative;
     top: 5px;
   }
 
   .icon {
-    font-size: 14px;
-    padding: 18px;
+    font-size: 12px;
+    padding: 12px;
   }
 
   .title-bar {
@@ -32,82 +38,6 @@
 
   .content {
     font-size: 14px;
-  }
-
-  .login-demo .form-group>input {
-    width: 80%;
-  }
-
-  .folder {
-    width: 160px;
-  }
-
-  .file {
-    font-size: 13px;
-  }
-
-  .terminal {
-    font-size: 13px;
-  }
-
-  .button {
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  .window {
-    width: 900px;
-    height: 600px;
-  }
-
-  .mac-screen {
-    width: 800px;
-    height: 550px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .screen-container {
-    width: 800px;
-    height: 600px;
-  }
-
-  .macintosh {
-    width: 600px;
-    height: 800px;
-  }
-
-  .monitor-inner {
-    width: 550px;
-    height: 750px;
-  }
-
-  .screen-cutout {
-    width: 550px;
-    height: 740px;
-    position: relative;
-    top: 5px;
-  }
-
-  .icon {
-    font-size: 12px;
-    padding: 15px;
-  }
-
-  .title-bar {
-    font-size: 14px;
-  }
-
-  .content {
-    font-size: 12px;
-  }
-
-  .login-demo .form-group>input {
-    width: 90%;
-  }
-
-  .folder {
-    width: 140px;
   }
 
   .file {
@@ -124,81 +54,135 @@
   }
 
   .window {
-    width: 700px;
-    height: 500px;
+    width: 85%;
   }
 
   .mac-screen {
-    width: 650px;
-    height: 450px;
+    width: 85%;
+    height: 300px;
+  }
+
+  .screen {
+    width: 85%;
+    height: 350px;
+    top: 15px;
+  }
+
+  .desktop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opening {
+    width: auto;
+    left: 120px;
+    bottom: 155px;
+  }
+
+  .opening-inner {
+    width: auto;
+  }
+
+  .logo {
+    bottom: 150px;
+  }
+
+  .foot {
+    z-index: 10;
+    height: 130px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .screen-container {
-    width: 600px;
-    height: 450px;
+    width: 90%;
+    height: 500px;
+  }
+
+  .monitor {
+    height: 730px;
   }
 
   .macintosh {
-    width: 500px;
-    height: 750px;
+    width: 90%;
+    height: 850px;
   }
 
   .monitor-inner {
-    width: 450px;
+    width: 90%;
     height: 650px;
+    top: 35px;
   }
 
   .screen-cutout {
-    width: 450px;
-    height: 640px;
+    width: 90%;
+    height: 450px;
     position: relative;
-    top: 5px;
+    top: 10px;
   }
 
   .icon {
-    font-size: 12px;
-    padding: 12px;
+    font-size: 14px;
+    padding: 15px;
   }
 
   .title-bar {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .content {
-    font-size: 11px;
-  }
-
-  .login-demo .form-group>input {
-    width: 100%;
-  }
-
-  .folder {
-    width: 120px;
+    font-size: 16px;
   }
 
   .file {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .terminal {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .button {
-    padding: 6px;
-    font-size: 9px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   .window {
-    width: 600px;
-    height: 400px;
+    width: 80%;
   }
 
   .mac-screen {
-    width: 550px;
+    width: 80%;
     height: 350px;
+  }
+
+  .screen {
+    width: 90%;
+    height: 400px;
+    top: 20px;
+  }
+
+  .desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .opening {
+    width: auto;
+    left: 50%;
+    bottom: 100px;
+    right: 40px;
+  }
+
+  .opening-inner {
+    width: auto;
+  }
+
+  .logo {
+    bottom: 90px;
+    left: 12%;
+  }
+
+  .foot {
+    height: 140px;
   }
 }
 
@@ -266,7 +250,7 @@
   }
 
   .screen {
-    width: auto;
+    width: 90%;
     height: 300px;
     top: 10px;
   }
