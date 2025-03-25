@@ -1,0 +1,297 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .screen-container {
+    width: 1000px;
+    height: 700px;
+  }
+
+  .macintosh {
+    width: 750px;
+    height: 950px;
+  }
+
+  .monitor-inner {
+    width: 700px;
+    height: 900px;
+  }
+
+  .screen-cutout {
+    width: 700px;
+    height: 890px;
+    position: relative;
+    top: 5px;
+  }
+
+  .icon {
+    font-size: 14px;
+    padding: 18px;
+  }
+
+  .title-bar {
+    font-size: 16px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+
+  .login-demo .form-group>input {
+    width: 80%;
+  }
+
+  .folder {
+    width: 160px;
+  }
+
+  .file {
+    font-size: 13px;
+  }
+
+  .terminal {
+    font-size: 13px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .window {
+    width: 900px;
+    height: 600px;
+  }
+
+  .mac-screen {
+    width: 800px;
+    height: 550px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .screen-container {
+    width: 800px;
+    height: 600px;
+  }
+
+  .macintosh {
+    width: 600px;
+    height: 800px;
+  }
+
+  .monitor-inner {
+    width: 550px;
+    height: 750px;
+  }
+
+  .screen-cutout {
+    width: 550px;
+    height: 740px;
+    position: relative;
+    top: 5px;
+  }
+
+  .icon {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .title-bar {
+    font-size: 14px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .login-demo .form-group>input {
+    width: 90%;
+  }
+
+  .folder {
+    width: 140px;
+  }
+
+  .file {
+    font-size: 12px;
+  }
+
+  .terminal {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .window {
+    width: 700px;
+    height: 500px;
+  }
+
+  .mac-screen {
+    width: 650px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .screen-container {
+    width: 600px;
+    height: 450px;
+  }
+
+  .macintosh {
+    width: 500px;
+    height: 750px;
+  }
+
+  .monitor-inner {
+    width: 450px;
+    height: 650px;
+  }
+
+  .screen-cutout {
+    width: 450px;
+    height: 640px;
+    position: relative;
+    top: 5px;
+  }
+
+  .icon {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  .title-bar {
+    font-size: 12px;
+  }
+
+  .content {
+    font-size: 11px;
+  }
+
+  .login-demo .form-group>input {
+    width: 100%;
+  }
+
+  .folder {
+    width: 120px;
+  }
+
+  .file {
+    font-size: 11px;
+  }
+
+  .terminal {
+    font-size: 11px;
+  }
+
+  .button {
+    padding: 6px;
+    font-size: 9px;
+  }
+
+  .window {
+    width: 600px;
+    height: 400px;
+  }
+
+  .mac-screen {
+    width: 550px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 575px) {
+  .screen-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .monitor {
+    height: 600px;
+  }
+
+  .macintosh {
+    width: 90%;
+    height: 600px;
+  }
+
+  .monitor-inner {
+    width: 90%;
+    height: 550px;
+    top: 30px;
+  }
+
+  .screen-cutout {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    top: 5px;
+  }
+
+  .icon {
+    font-size: 10px;
+    padding: 10px;
+  }
+
+  .title-bar {
+    font-size: 14px;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .file {
+    font-size: 10px;
+  }
+
+  .terminal {
+    font-size: 10px;
+  }
+
+  .button {
+    padding: 6px;
+    font-size: 8px;
+  }
+
+  .window {
+    width: 90%;
+  }
+
+  .mac-screen {
+    width: 90%;
+    height: 250px;
+  }
+
+  .screen {
+    width: auto;
+    height: 300px;
+    top: 10px;
+  }
+
+  .desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .opening {
+    width: auto;
+    left: 120px;
+    bottom: 165px;
+    right: 30px;
+  }
+
+  .opening-inner {
+    width: auto;
+  }
+
+  .logo {
+    bottom: 160px;
+  }
+
+  .foot {
+    z-index: 10;
+    height: 120px;
+  }
+}
