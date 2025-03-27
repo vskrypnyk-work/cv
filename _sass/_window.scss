@@ -9,6 +9,7 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     z-index: 100;
+    resize: auto;
     transform: translate(var(--x-offset, 0), var(--y-offset, 0));
 
     .title-bar {
