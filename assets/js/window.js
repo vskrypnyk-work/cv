@@ -76,7 +76,6 @@ function stopDragging() {
     isDragging = false;
 }
 
-// Добавляем обработчики событий для ПК и мобильных устройств
 document.querySelectorAll('.title-bar').forEach(titleBar => {
     titleBar.addEventListener('mousedown', startDragging);
     titleBar.addEventListener('touchstart', startDragging, { passive: false });
